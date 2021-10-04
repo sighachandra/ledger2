@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+ 
+.table {
+   padding: 20px;
+   color: black;
+      }
+.hidden{
+    color: red;
+       }
+@media only screen and (max-width: 600px) {
+             .table{background-color: red;}
+                                          }
+@media only screen and (min-width: 600px) {
+             .table{background-color: blue;}
+                                          }
+@media only screen and (min-width: 768px) {
+             .table{background-color: green;}
+                                          }
+@media only screen and (min-width: 992px) {
+             .table{background-color: yellow;}
+                                          }
+@media only screen and (min-width: 1200px) {
+             .table{background-color: #ccc;}
+                                          }
+@media only screen and (min-width: 1200px) {
+             .hidden{display: none;}
+                                          }
+</style>
+</head>
+<body>
+   
+<p class="table">MY MR MERMAID</p>
+<p class="hidden">Thai Yibai and Yi Duo</p>
+</body>
+</html>

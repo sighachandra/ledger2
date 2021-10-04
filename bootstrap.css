@@ -1,0 +1,19 @@
+.shadow{height: 94px; }
+.flex-container{
+      display: flex;
+      
+}
+.ledgerpng{
+      width: 72px;
+      
+      }
+h6{height: 56px;
+  margin-top: 52px !important;}
+.button{
+      background-color: #d09b3b !important;
+      border-color: #d09b3b !important;
+        }
+.error{
+      color: red;
+      display: none;
+      }

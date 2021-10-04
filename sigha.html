@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Mukta:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/all.css">
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap" rel="stylesheet">
+<style>
+   .ima{
+      clear: both;
+      }
+  ::placeholder{
+              color:#bdbdbd;
+               }
+  .bnm{
+      list-style: none;
+      }
+  .right{
+      float: right;
+       }
+  .left{
+     float: left;
+       }
+  .dot{
+    width:2px;
+    height:2px;
+    border:1px solid #777575;
+    border-radius:6px;
+    display: inline-block;
+      }
+   .tab{
+      float: left;
+      border: hidden;
+      background-color: #F5F5F5;	
+      width: 15%;
+      height:-webkit-fill-available;
+      text-align: left;
+       }
+   .topnav{
+       overflow: hidden;
+       background-color: #f7f7f7;
+          }
+    
+  
+</style>
+</head>
+<body style="margin:0;text-align:right;">
+<div>
+<div class="topnav" style="height:25px;">
+  
+
+  <div class="left">
+      <form action="">
+	<i class="fas fa-bars" style="padding-left:45px;"></i>	
+	<i class="fa fa-home" style="width:20px;padding-left:7px;"></i>
+        <div class="right" style="position:relative;padding-left:9px;">
+	<i class="fa fa-search" style="width:20px;padding-left:1px;position:absolute;z-index:9;padding-top:3px;color:#e0e0e0"></i>
+	<input type="text" placeholder="search.." style="border-radius:5px;border:hidden;height:20px;padding-left:25px;outline:0;"/>
+        </div>
+     </form>
+  </div>
+  
+</div>
+</div>
+<div>
+<div style="width:66%;float:right;text-align:left;">
+<div style="width:60%;text-align:left;display:inline-block;">
+   <div class="left" style="margin-right: 10px;">
+      <h3 style="margin-bottom:10px;font-family: 'Heebo', sans-serif;">Inbox</h3>
+   </div>
+<div class="right" style="padding-top: 19px;">
+     <div>
+	 <div class="left">
+	  <p style="margin-bottom:10px;margin-top:1px;margin-right:20px;font-family: 'Heebo', sans-serif;color:#777575;">sort</p>
+	 </div>
+	<div class="right" style="color:#777575">
+         <span class="dot"></span>
+	 <span class="dot"></span>
+	 <span class="dot"></span>
+	</div>
+     </div>
+</div>
+
+<div class="ima" >
+<ul class="bnm" style="padding-left:0px;margin-bottom: 3px;margin-top:5px;">
+  <li  style="border-bottom: 1px solid #231e1e12;padding-bottom: 7px;"><div style="width:11px;height:11px;border:1px solid #1314158a;border-radius:6px;display:inline-block;margin-right:4px;"></div><span style="color:#3a3939;font-family: 'Heebo', sans-serif;">Need to make a portfolio website</span></li>
+  <li style="border-bottom: 1px solid #231e1e12;padding-bottom: 7px;padding-top:7px;"><div style="width:11px;height:11px;border:1px solid #1314158a;border-radius:6px;display:inline-block;margin-right:4px;"></div><span style="color:#3a3939;font-family: 'Heebo', sans-serif;">Need to make my garden better by this month</span></li>
+  
+  <li style="border-bottom: 1px solid #231e1e12;padding-bottom: 7px;padding-top:7px;"><div style="width:11px;height:11px;border:1px solid #1314158a;border-radius:6px;display:inline-block;margin-right:4px;"></div><span style="color:#3a3939;font-family: 'Heebo', sans-serif;">Need to buy a two wheeler by next month</span></li>
+</div>
+</ul>
+  
+<form action="/action_page.php">
+  
+  <input type="text" id="_input" placeholder="Write your todo here..." style="width:500px;padding:8px;border-color:#231e1e12;font-size:small;border-radius:6px;border-width:thin;outline:0;">
+  <div class="ima" style="margin:10px;">
+  <input type="button" onclick="loadDoc()" style="background-color:#f1b6af;color:white;border-radius:5px;padding:4px 6px;border-width:0px;height:30px;width:65px;" value="Add task">
+  <input type="button" style="background-color:white;border-radius:5px;padding:4px 6px;border-style:solid;border-width:thin;height:30px;margin-left:5px;" value="Cancel">
+  </div>
+</div>
+</div>
+
+<div class="tab" style="margin-left:5px;background-color:#f5f5f5;">
+  <ul class="bnm" style="padding-top:10px;"> 
+  <li class="left" style="height:25px;padding-right:8px;text-align:left;padding-bottom:5px;width:147px;background-color:#ececec;"><i class="fa fa-inbox" style="color:blue;margin-right:7px;"></i><span style="font-family: 'Hind Siliguri', sans-serif;">Inbox</span><span style="padding-left:70px;color:#bdbdbd;font-size:15px;">3</span></li>
+   <li class="left" style="border: hidden;border-radius: 4px;width: -webkit-fill-available;height:25px;padding-right:8px;text-align:left;padding-bottom:5px;"><i class="fa fa-address-book"style="color:green;margin-right:9px;"></i><span style="font-family: 'Hind Siliguri', sans-serif;">Today</span></li>
+   <li class="left" style="border: hidden;border-radius: 4px;width: -webkit-fill-available;height:25px;padding-right:8px;text-align:left;padding-bottom:17px;"><i class="fa fa-calendar" style="color:#cc21ccde;margin-right:9px;"></i><span style="font-family: 'Hind Siliguri', sans-serif;">Upcomings</span></li>
+   <li class="left" style="border: hidden;border-radius: 4px;width: -webkit-fill-available;height:25px;padding-right:8px;text-align:left;padding-bottom:5px;"><i class="fa fa-angle-down" style="color:#b9a8a8;margin-right:9px;"></i><span style="font-family: 'Hind Siliguri', sans-serif;"><b>Projects</b></span></li>
+   <li class="left" style="border: hidden;border-radius: 4px;width: -webkit-fill-available;height:25px;padding-right:8px;text-align:left;padding-left:0px;padding-bottom:5px;"><div class="left" style="width:5px;height:5px;border-radius:3px;border:1px solid #f58d85;background-color:#f58d85;margin-top:7px;margin-right:9px;margin-left:2px;"></div><span style="font-family: 'Hind Siliguri', sans-serif;">Personal</span></li>
+  <li class="left" style="border: hidden;border-radius: 4px;width: -webkit-fill-available;height:25px;padding-right:8px;text-align:left;padding-bottom:5px;"><div class="left" style="width:5px;height:5px;border-radius:3px;border:1px solid #bdbdbd;background-color:#bdbdbd;margin-top:7px;margin-right:9px;margin-left:2px"></div><span style="font-family: 'Hind Siliguri', sans-serif;">Shopping</span></li>
+  <li class="left" style="border: hidden;border-radius: 4px;width: -webkit-fill-available;height:25px;padding-right:8px;text-align:left;padding-bottom:5px;"><div class="left" style="width:5px;height:5px;border-radius:3px;border:1px solid #88bed6;background-color:#88bed6;margin-top:7px;margin-right:9px;margin-left:2px"></div><span style="font-family: 'Hind Siliguri', sans-serif;">Work</span></li>
+  <li class="left" style="border: hidden;border-radius: 4px;width: -webkit-fill-available;height:25px;padding-right:8px;text-align:left;padding-bottom:5px;"><div class="left" style="width:5px;height:5px;border-radius:3px;border:1px solid #80deea;background-color:#80deea;margin-top:7px;margin-right:9px;margin-left:2px"></div><span style="font-family: 'Hind Siliguri', sans-serif;">Errands</span></li>
+  <li class="left" style="border: hidden;border-radius: 4px;width: -webkit-fill-available;height:25px;padding-right:8px;text-align:left;padding-bottom:5px;"><div class="left" style="width:5px;height:5px;border-radius:3px;border:1px solid #f48fb1;background-color:#f48fb1;margin-top:7px;margin-right:9px;margin-left:2px"></div><span style="font-family: 'Hind Siliguri', sans-serif;">Movies to watch</span></li>
+  <li class="left" style="border: hidden;border-radius: 4px;width: -webkit-fill-available;height:25px;padding-right:8px;text-align:left;padding-bottom:10px;"><div class="left" style="width:5px;height:5px;border-radius:3px;border:1px solid #bdbdbd;background-color:#bdbdbd;margin-top:7px;margin-right:9px;margin-left:2px"></div><span style="font-family: 'Hind Siliguri', sans-serif;">Articles to Read</span></li>
+  <li class="left" style="border: hidden;border-radius: 4px;width: -webkit-fill-available;height:25px;padding-right:8px;text-align:left;padding-left:17px;padding-bottom:15px;"><span style="color:#bdbdbd;font-size:15px;font-family: 'Hind Siliguri', sans-serif;">Archived projects</span></li>
+  <li class="left" style="border: hidden;border-radius: 4px;width: -webkit-fill-available;height:25px;padding-right:8px;text-align:left;padding-bottom:17px;"><i class="fa fa-angle-right" style="color:#b9a8a8;margin-right:9px;"></i><span style="font-family: 'Hind Siliguri', sans-serif;"><b>Labels</b></span></li>
+  <li class="left" style="border: hidden;border-radius: 4px;width: -webkit-fill-available;height:25px;padding-right:8px;text-align:left;padding-bottom:5px;"><i class="fa fa-angle-right" style="color:#b9a8a8;margin-right:9px;"></i><span style="font-family: 'Hind Siliguri', sans-serif;"><b>Filters</b></span></li>
+  </ul>
+
+</div>
+</div>
+</body>
+
+</html>

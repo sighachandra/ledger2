@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<style>
+   .ima{
+      clear: both;
+      }
+  ::placeholder{
+              color:#bdbdbd;
+               }
+  ul.bnm{
+      list-style: none;
+      }
+  hr{
+    float: left;
+    width: 100%;
+    height: 0px;
+    border-color:#fafafa30
+    }
+
+</style>
+<body style="margin:0;text-align:right;">
+<div style="width:60%;text-align:left;display:inline-block;">
+<h3>Inbox</h3>
+<ul class="bnm">
+  <li><input type="radio">Need to make a portfolio website</li>
+  <hr>
+  <li><input type="radio">Need to make my garden better by this month</li>
+  <hr>
+  <li><input type="radio">Need to buy a two wheeler by next month</li>
+  <hr>
+</ul>
+  
+<form action="/action_page.php">
+  
+  <input type="text" id="_input" placeholder="Write your todo here..." style="width:500px;padding:8px;border-color:#231e1e12;font-size:small;border-radius:8px;border-width:thin;">
+  <div class="ima" style="margin:10px;">
+  <input type="button" onclick="loadDoc()" style="background-color:#f1b6af;color:white;border-radius:5px;padding:4px 6px;border-width:0px;height:30px;" value="Addtask">
+  <input type="button" style="background-color:white;border-radius:5px;padding:4px 6px;border-style:solid;border-width:thin;height:30px;" value="Cancel">
+  </div>
+</div>
+<script>
+function loadDoc() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    // document.getElementById("demo").innerHTML =
+    // this.responseText;
+  }
+  xhttp.open("POST", "https://todo-app-3a953-default-rtdb.firebaseio.com/todos.json");
+var inputElementValue = document.getElementById('_input').value;
+
+  xhttp.send('{"title":"'+inputElementValue+'"}');
+
+}
+
+</script>
+</body>
+
+</html>
